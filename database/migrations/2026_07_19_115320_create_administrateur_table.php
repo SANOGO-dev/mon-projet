@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
-            $table->number_format('contact');
+            $table->integer('contact');
             $table->string('spécialité');
             $table->string('staut');
             $table->string('grade');

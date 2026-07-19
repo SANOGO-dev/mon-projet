@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('intitulé du cours');
             $table->string('filière');
-            $table->number_format('semestre');
-            $table->number_format('nbre heure de cours');
-            $table->number_format('nbre de crédit');
-            $table->number_format('sequence');
+            $table->integer('semestre');
+            $table->integer('nbre heure de cours');
+            $table->integer('nbre de crédit');
+            $table->integer('sequence');
             
             
         });

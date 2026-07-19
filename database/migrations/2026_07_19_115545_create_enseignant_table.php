@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('statut');
             $table->string('départément');
             $table->string('grade');
-            $table->number_format(taux horaires);
+            $table->integer('taux horaires');
             $table->timestamps();
         });
     }
