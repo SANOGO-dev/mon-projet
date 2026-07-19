@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('cours', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('intitulé du cours');
+            $table->string('filière');
+            $table->number_format('semestre');
+            $table->number_format('nbre heure de cours');
+            $table->number_format('nbre de crédit');
+            $table->number_format('sequence');
+            
+            
         });
     }
 

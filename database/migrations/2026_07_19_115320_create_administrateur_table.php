@@ -13,7 +13,15 @@ return new class extends Migration
     {
         Schema::create('administrateur', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nom');
+            $table->string('prenom');
+            $table->number_format('contact');
+            $table->string('spécialité');
+            $table->string('staut');
+            $table->string('grade');
+            
+            
+    
         });
     }
 

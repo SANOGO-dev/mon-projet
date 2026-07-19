@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('enseignant', function (Blueprint $table) {
             $table->id();
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('statut');
+            $table->string('départément');
+            $table->string('grade');
+            $table->number_format(taux horaires);
             $table->timestamps();
         });
     }
