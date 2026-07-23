@@ -14,11 +14,12 @@ return new class extends Migration
         Schema::create('administrateur', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->string('prenom');
+            $table->string('prénom');
             $table->integer('contact');
             $table->string('spécialité');
-            $table->string('staut');
+            $table->string('statut');
             $table->string('grade');
+             $table->timestamps();
             
             
     

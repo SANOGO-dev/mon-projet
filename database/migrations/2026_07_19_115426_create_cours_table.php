@@ -15,10 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('intitulé du cours');
             $table->string('filière');
+            $table->integer('niveau');
             $table->integer('semestre');
-            $table->integer('nbre heure de cours');
-            $table->integer('nbre de crédit');
-            $table->integer('sequence');
+            $table->integer('nbre_heure_cours');
+            $table->integer('nbre_crédit');
+             $table->foreignId('administrateur_id')
+                    ->constrained('administrateur')
+                     ->onDelete('cascade');
+                     $table->timestamps();
+          
             
             
         });
